@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acknowledgment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <style>
+      
+
+        main {
+            padding: 20px;
+            text-align: center;
+            height: 79vh;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            /* padding: 20px; */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #b3b3b3;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #2a2a2a;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #2a2a2a;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: rgb(71, 181, 218);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+                
+    <div class="left">Raju's Portfolio</div>
+    <div class="right">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Me</h1>
+
+        <!-- Form Section -->
+        <form id="contactForm" onmouseover="addPadding(true)" onmouseout="addPadding(false)" onsubmit="return validateForm()"">
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="name" name="name" required placeholder="Name">
+
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" id="email" name="email" required placeholder="Email">
+
+            <!-- <label for="message">Message:</label> -->
+            <textarea id="message" name="message" rows="4" required placeholder="Message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+                alert("Please fill out all fields.");
+                return false;
+            }
+
+            
+            alert("Your query was successfully sent!");
+            return true;
+        }
+
+
+ 
+
+
+        
+
+
+    </script>
+
+
+
+
+<div class="footer">
+    <p>Copyright &copy; My Portfolio.com </p>
+    <a href="https://github.com/RAJUMODI27">GitHub</a>
+    <a href="https://www.linkedin.com/in/raju-modi/">LinkedIn</a>
+    <a href="https://twitter.com/Rajumodi27">Twitter</a>
+    <a href="https://www.instagram.com/modi_raju_27/">Instagram</a>
+    <a href="https://mail.google.com/mail/u/0/#inbox">Email Me</a>
+    <br>
+    <small>Address: Gujarat,Porbandar, INDIA</small>
+</div>
+</body>
+
+</html>

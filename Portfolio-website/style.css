@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+
+}
+
+body.index{
+    overflow: hidden;
+
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    height: 50px;     
+    background-color: rgb(8, 8, 43);
+
+}
+
+nav ul{
+    display: flex;
+   justify-content: center;
+
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+    text-decoration: none;
+
+}
+nav ul li a{
+    
+    text-decoration: none;
+    color: white;
+    
+
+
+}
+nav ul li a:hover{
+    
+    
+    color: rgb(125, 125, 217);
+
+
+}
+.left{
+
+    font-size: 26px;
+}
+
+
+.firstsection{
+
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    height: 68vh;
+
+
+
+}
+.firstsection > div{
+    width: 30%;
+}
+
+.leftsection{
+
+   
+    width: 30%;
+    font-size: 50px;
+    margin: 90px;
+   
+
+
+}
+
+.buttons button{
+    padding: 13px;
+    border-radius: 30px;
+}
+
+
+.buttons a{
+    text-decoration: none;
+}
+
+.buttons button:hover{
+    color: white;
+    background-color: blueviolet;
+}
+
+
+
+.rightsection img{
+
+    
+    width: 80%;
+   
+}
+
+.purple{
+    color: blueviolet;
+}
+#element{
+    color: blueviolet;
+
+}
+
+
+.project-links .n1{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin: 7rem 3rem;
+
+
+
+
+}
+
+.project-links img{
+
+    height: 10rem;
+
+
+}
+
+.project-links .project-description{
+    padding: 90px;
+    color: #7770ad;
+}
+
+
+
+
+
+.project-links a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 19px;
+    padding-left: 20px;
+
+}
+
+.project-links h3:hover{
+   color: brown;
+}
+
+
+.footer {
+    background-color: rgb(8, 8, 43);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+
+.footer a:hover {
+    color: rgb(125, 125, 217);
+}
